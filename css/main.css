@@ -3,61 +3,266 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, menu, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-main, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
 }
+
 /* HTML5 hidden-attribute fix for newer browsers */
 *[hidden] {
     display: none;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-menu, ol, ul {
-	list-style: none;
+
+menu,
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /*settings*/
-body{
-	font-size: 16px;
-	line-height: 1,62;
-	color: darkgrey;
-	background-color: #fff;
+body {
+    font-size: 16px;
+    line-height: 1, 62;
+    font-family: 'Roboto', sans-serif;
+
 }
+
 .container {
-	padding-left: 40px;
-	padding-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.main-page {
+    background-color: white;
+    min-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-subtitle {
+    font-size: 12px;
+    line-height: 1, 33;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #828282;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.main-title {
+    font-size: 42px;
+    line-height: 1;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 95px;
+}
+
+.main-title span {
+    color: #D476F8;
+    font-size: 72px;
+    font-family: 'Yesteryear', cursive;
+
+}
+
+.catalog-sort-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 1.25%;
+}
+
+.catalog-item {
+    width: 19%;
+    height: 398px;
+    background-color: rgb(189, 107, 107);
+    display: flex;
+}
+
+.button{
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px; 
+    gap: 4px;
+    width: 27px;
+    height: 24px;
+    border: none;
+    padding: 0 4px;
+}
+
+.cart svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 0px;
+}
+
+.catalog-sort-types{
+    position: static;
+}
+
+.catalog-sort{
+position: relative;
+}
+
+.catalog-sort button{
+
+}
+
+.catalog-sort ul{ 
+    font-size: 12px;
+    position: absolute;
+    display: none;
+    width: 129px;
+    height: 200px;
+    left: 0;
+    top: 24px;
+}
+
+.catalog-sort:hover ul{
+    display: block;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    
 }
