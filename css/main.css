@@ -188,7 +188,6 @@ body {
     color: #D476F8;
     font-size: 72px;
     font-family: 'Yesteryear', cursive;
-
 }
 
 .catalog-sort-container {
@@ -221,9 +220,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 0px; 
     gap: 4px;
-    width: 27px;
     height: 24px;
     border: none;
     padding: 0 4px;
@@ -240,11 +237,7 @@ body {
 }
 
 .catalog-sort{
-position: relative;
-}
-
-.catalog-sort button{
-
+    position: relative;
 }
 
 .catalog-sort ul{ 
@@ -261,8 +254,40 @@ position: relative;
     display: block;
 }
 
-.header{
+.header-top .container{
     display: flex;
-    position: fixed;
-    
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.header-bottom .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location-phone{
+    display: flex;
+}
+
+.header-top{
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header-bottom{
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+nav ul{
+    display: flex;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
