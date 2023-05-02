@@ -171,6 +171,7 @@ body {
     color: #828282;
     text-align: center;
     margin-bottom: 8px;
+    top: 185px;
 }
 
 .main-title {
@@ -197,16 +198,44 @@ body {
 }
 
 .catalog {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px 1.25%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px 15px;
+}
+
+@media all and (max-width: 991px) {
+    .catalog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media all and (max-width: 560px) {
+    .catalog {
+        grid-template-columns: repeat 1fr;
+    }
+
 }
 
 .catalog-item {
-    width: 19%;
     height: 398px;
-    background-color: rgb(189, 107, 107);
-    display: flex;
+    /*display: flex;*/
+}
+
+.catalog-item-image {
+    height: 320px;
+}
+
+.catalog-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.catalog-item-info {
+    text-align: center;
+    padding: 16px 24px 0;
 }
 
 .button{
@@ -245,9 +274,10 @@ body {
     position: absolute;
     display: none;
     width: 129px;
-    height: 200px;
+    /*height: 200px;*/
     left: 0;
     top: 24px;
+    background: #FFFFFF;
 }
 
 .catalog-sort:hover ul{
@@ -268,6 +298,7 @@ body {
 
 .location-phone{
     display: flex;
+    gap: 30px;
 }
 
 .header-top{
@@ -284,10 +315,140 @@ body {
 
 nav ul{
     display: flex;
+    gap: 40px;
 }
 
 .footer .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.location {
+    position: relative;
+    font-size: 14px;
+}
+
+.location ul{
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px;
+    display: none;
+    width: 129px;
+    /*height: 200px;*/
+    left: 0;
+    top: 24px;
+    background: #FFFFFF;
+}
+
+.location:hover ul{
+    display: block;
+}
+
+.btn-location {
+    align-items: center;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.btn-location svg{
+    width: 16px;
+    height: 16px;  
+}
+
+.phone {
+    position: relative;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.language{
+    position: relative;
+    font-size: 14px;
+}
+
+.language ul{
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px;
+    display: none;
+    width: 129px;
+    /*height: 200px;*/
+    left: 0;
+    top: 24px;
+    background: #FFFFFF;
+}
+
+.language:hover ul{
+    display: block;
+}
+
+.language button{
+    vertical-align: middle;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    vertical-align: top;
+}
+
+.logo-phone-socials .logo{
+    padding: 25px;
+}
+
+.logo-phone-socials{
+    align-items: start;
+    
+}
+
+.logo-phone-socials .phone{
+    padding: 25px;
+}
+
+.logo-phone-socials p{
+    padding-left: 25px;
+}
+
+.logo-phone-socials ul{
+    display: flex;
+    gap: 16px;
+    padding: 25px;
+}
+
+.categories-info{
+    display: flex;
+    gap: 50px;
+}
+
+.categories-info h3{
+    font-size: 18px;
+    padding-bottom: 16px;
+}
+
+.categories-info ul{
+    padding-left: 16px;
+}
+
+.subscription h3{
+    font-size: 18px;
+    
+}
+
+.subscription{
+    padding-left: 50px;
+}
+
+.subscription p{
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
