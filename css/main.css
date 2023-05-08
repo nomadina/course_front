@@ -151,9 +151,18 @@ body {
 
 }
 
+button{
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+
+}
+
 .container {
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 72px;
 }
 
 .main-page {
@@ -239,8 +248,6 @@ body {
 }
 
 .button{
-    background-color: none;
-    border: none;
     cursor: pointer;
     padding: 0 4px;
 }
@@ -251,7 +258,6 @@ body {
     flex-direction: row;
     gap: 4px;
     height: 24px;
-    border: none;
     padding: 0 4px;
 }
 
@@ -261,16 +267,16 @@ body {
     margin-right: 0px;
 }
 
-.catalog-sort-types{
+.catalog-sort-types {
     position: static;
 }
 
-.catalog-sort{
+.catalog-sort {
     position: relative;
 }
 
-.catalog-sort ul{ 
-    font-size: 12px;
+.catalog-sort ul { 
+    font-size: 14px;
     position: absolute;
     display: none;
     width: 129px;
@@ -278,30 +284,31 @@ body {
     left: 0;
     top: 24px;
     background: #FFFFFF;
+    gap: 5px;
 }
 
-.catalog-sort:hover ul{
+.catalog-sort:hover ul {
     display: block;
 }
 
-.header-top .container{
+.header-top .container {
     display: flex;
     align-items: center;
     justify-content: space-between; 
 }
 
-.header-bottom .container{
+.header-bottom .container { 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.location-phone{
+.location-phone {
     display: flex;
     gap: 30px;
 }
 
-.header-top{
+.header-top {
     border-bottom: 1px solid #E0E0E0;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -324,42 +331,43 @@ nav ul{
     justify-content: space-between;
 }
 
-.location {
+/* .location {
     position: relative;
-    font-size: 14px;
+    font-size: 14px; */
 }
 
-.location ul{
+/*.location-info-link ul {
     position: absolute;
     justify-content: center;
     align-items: flex-start;
     padding: 8px;
     display: none;
     width: 129px;
-    /*height: 200px;*/
+    /*height: 200px;
     left: 0;
     top: 24px;
     background: #FFFFFF;
+    gap: 5px;
 }
 
-.location:hover ul{
+/*.location-info-link:hover ul{
     display: block;
-}
+} */
 
-.btn-location {
+/*.btn-location {
+    display: flex;
     align-items: center;
-    background-color: none;
-    border: none;
-    cursor: pointer;
     padding: 0 4px;
-}
+}       
 
 .btn-location svg{
+    margin-right: 10px;
     width: 16px;
     height: 16px;  
-}
+}*/
 
 .phone {
+    display: flex;
     position: relative;
     font-size: 14px;
     vertical-align: middle;
@@ -388,9 +396,8 @@ nav ul{
 }
 
 .language button{
+    display: flex;
     vertical-align: middle;
-    background-color: none;
-    border: none;
     cursor: pointer;
     padding: 0 4px;
 }
@@ -400,6 +407,7 @@ nav ul{
     justify-content: space-between;
     gap: 80px;
     vertical-align: top;
+    margin-top: 192px;
 }
 
 .logo-phone-socials .logo{
@@ -448,7 +456,63 @@ nav ul{
     padding-left: 50px;
 }
 
-.subscription p{
+.subscription p {
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.location-info-item {
+    display: flex;
+    align-items: center;
+}
+
+.location-info-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.location-info-link {
+    /*display: flex;
+    align-items: center;*/
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.location-info-link ul {
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px;
+    display: none;
+    width: 129px;
+    /*height: 200px;*/
+    left: 0;
+    top: 24px;
+    background: #FFFFFF;
+    gap: 8px;
+}
+
+.location-info-link:hover ul {
+    display: block;
+}
+
+.location-info {
+    display: flex;
+    gap: 30px;
+}
+
+
+.arrow-dropdown {
+    position: relative;
+    top: 50%; 
+    left: 5px;
+    /* margin-left: 15px; */
+    width: 14px;
+    height: 8px;
 }
