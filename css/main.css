@@ -144,6 +144,24 @@ table {
 }
 
 /*settings*/
+:root{
+    --color-black: #111212;
+    --color-blue-700: #4788F5;
+    --color-blue-800: #3070DD;
+    --color-special: #D476F8;
+    --color-red-700: #EB5757;
+    --color-red-800: #DB3C3C;
+    --color-gray-1000: #4F4F4F;
+    --color-gray-900: #828282;
+    --color-gray-800: #BDBDBD;
+    --color-gray-700: #E0E0E0;
+    --color-gray-400: #EBEBEB;
+    --color-gray-100: #F2F2F2;
+    --color-gray-50: #F8F8F8;
+
+
+}
+
 body {
     font-size: 16px;
     line-height: 1, 62;
@@ -160,9 +178,10 @@ button{
 }
 
 .container {
+    border-bottom: 1px solid var(--color-gray-700);
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 72px;
+    /* margin-top: 72px; */
 }
 
 .main-page {
@@ -170,6 +189,7 @@ button{
     min-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 72px; 
 }
 
 .main-subtitle {
@@ -247,6 +267,12 @@ button{
     padding: 16px 24px 0;
 }
 
+.catalog-item-info span {
+    font-size: 12px;
+    color: var(--color-gray-900);
+
+}
+
 .button{
     cursor: pointer;
     padding: 0 4px;
@@ -295,12 +321,16 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .header-bottom .container { 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
 .location-phone {
@@ -309,15 +339,15 @@ button{
 }
 
 .header-top {
-    border-bottom: 1px solid #E0E0E0;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    /* border-bottom: 1px solid var(--color-gray-700); */
+    /* padding-top: 12px;
+    padding-bottom: 12px; */
 }
 
 .header-bottom{
-    border-bottom: 1px solid #E0E0E0;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    /* border-bottom: 1px solid var(--color-gray-700); */
+    /* padding-top: 9px;
+    padding-bottom: 9px; */
 }
 
 nav ul{
@@ -407,7 +437,7 @@ nav ul{
     justify-content: space-between;
     gap: 80px;
     vertical-align: top;
-    margin-top: 192px;
+    margin-top: 24px; 
 }
 
 .logo-phone-socials .logo{
@@ -462,6 +492,7 @@ nav ul{
 }
 
 .location-info-item {
+    position: relative;
     display: flex;
     align-items: center;
 }
@@ -474,8 +505,8 @@ nav ul{
 }
 
 .location-info-link {
-    /*display: flex;
-    align-items: center;*/
+    display: flex;
+    align-items: center;
     font-size: 14px;
     display: flex;
     position: relative;
@@ -484,7 +515,7 @@ nav ul{
     padding: 0 4px;
 }
 
-.location-info-link ul {
+.location-info-item ul {
     position: absolute;
     justify-content: center;
     align-items: flex-start;
@@ -498,7 +529,7 @@ nav ul{
     gap: 8px;
 }
 
-.location-info-link:hover ul {
+.location-info-item:hover ul {
     display: block;
 }
 
@@ -515,4 +546,24 @@ nav ul{
     /* margin-left: 15px; */
     width: 14px;
     height: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+a:visited {
+    color: var(--color-special);
+}
+
+.container-continue {
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 120px;
+}
+
+.container-continue a {
+    text-decoration: none;
+    color: var(--color-black);
 }
